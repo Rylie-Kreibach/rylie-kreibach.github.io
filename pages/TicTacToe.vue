@@ -1,8 +1,6 @@
 <template>
-    <head>
-		<title>Tic Tac Toe</title>
-        <link href="fancy.css" type="text/css" rel="stylesheet"/>
-	</head>
+    <title>Tic Tac Toe</title>
+    <link href="fancy.css" type="text/css" rel="stylesheet"/>
     
 	<PrimePanel header="Hello!" class="my-6">
 		Example new page
