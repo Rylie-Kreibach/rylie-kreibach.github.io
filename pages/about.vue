@@ -15,7 +15,14 @@
 	</div>
   </template>
   
-
+  <style scoped>
+  .image_size {
+	width: 100px; /* Set the desired width */
+	height: auto; /* Maintain aspect ratio */
+	max-width: 100%; /* Ensure it doesn't exceed the container's width */
+  }
+  </style>
+  
   <script>
   import flyImage from '@/assets/fly.jpg';
   

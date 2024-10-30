@@ -21,5 +21,7 @@ export default defineNuxtConfig({
       base: '/rylie-kreibach.github.io/'
     }
     
-  
+    
 });
+
+
