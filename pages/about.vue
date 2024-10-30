@@ -1,4 +1,5 @@
 <template>
+	<h1>Does this work?</h1>
 	<head>
 		<title>About</title>
 		<link href="fancy.css" type="text/css" rel="stylesheet"/>
