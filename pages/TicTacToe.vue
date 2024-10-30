@@ -29,12 +29,12 @@
   </template>
   
   <script>
-  import { init } from '@/assets/script.js'; // Adjust based on your exports
+  import script from '@/assets/script.js'; // Adjust based on your exports
   
   export default {
     mounted() {
-      if (typeof init === 'function') {
-        init(); // Call init if it exists
+      if (typeof script.init === 'function') {
+        script.init(); // Call init if it exists
       }
     }
   };

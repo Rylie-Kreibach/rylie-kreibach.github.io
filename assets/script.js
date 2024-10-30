@@ -16,3 +16,12 @@ $('td').on('click', function()
         $('#turn').text(turn + "'s turn");
     }
 });
+
+const script = {
+    init() {
+        // Initialization logic
+        console.log('Initialized!');
+    }
+};
+
+export default script;
