@@ -10,7 +10,7 @@
 	  </PrimePanel>
 	
 	  <PrimePanel header="Personal Artwork" class="my-6">
-		<img :src="flyImage" alt="Fly Image" class="responsive-image"/>
+		<img :src="flyImage" alt="Fly Image" class="image_size"/>
 	  </PrimePanel>
 	</div>
   </template>
