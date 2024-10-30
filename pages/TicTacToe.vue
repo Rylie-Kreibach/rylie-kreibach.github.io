@@ -1,6 +1,10 @@
 <template>
-    <link href="fancy.css" type="text/css" rel="stylesheet"/>
-	<PrimePanel header="Does this work?" class="my-6">
+    <head>
+		<title>Tic Tac Toe</title>
+        <link href="fancy.css" type="text/css" rel="stylesheet"/>
+	</head>
+    
+	<PrimePanel header="Hello!" class="my-6">
 		Example new page
 	</PrimePanel>
     <PrimePanel header="Does this work?" class="my-6">

@@ -16,9 +16,9 @@ const items = ref([
 		route: '/about'
 	},
 	{
-		label: 'Example',
+		label: 'TicTacToe',
 		icon: 'pi pi-info',
-		route: '/example'
+		route: '/TicTacToe'
 	},
 ])
 
