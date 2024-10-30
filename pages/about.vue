@@ -12,7 +12,7 @@
 	  </PrimePanel>
   
 	  <PrimePanel header="Personal Artwork" class="my-6">
-		<img src="/fly.jpg" alt="Fly Image">
+		<img :src="require('@/static/fly.jpg')" alt="Fly Image">
 	  </PrimePanel>
 	</div>
   </template>

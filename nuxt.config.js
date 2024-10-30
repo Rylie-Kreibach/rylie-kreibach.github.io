@@ -15,4 +15,11 @@ export default defineNuxtConfig({
     },
     css: ["primeicons/primeicons.css"],
     compatibilityDate: "2024-10-21",
+    // nuxt.config.js
+    
+    router: {
+      base: '/rylie-kreibach.github.io/'
+    }
+    
+  
 });
