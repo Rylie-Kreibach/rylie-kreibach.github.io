@@ -1,6 +1,6 @@
 <template>
 	<div id="app">
-	  <img :src="image" alt="Main Image" />
+	  <!-- <img :src="image" alt="Main Image" /> -->
 	  
 	  <h1>Does this work?</h1>
 	  
@@ -10,11 +10,12 @@
 	  </PrimePanel>
 	
 	  <PrimePanel header="Personal Artwork" class="my-6">
-		<img :src="flyImage" alt="Fly Image" />
+		<img :src="flyImage" alt="Fly Image" class="responsive-image"/>
 	  </PrimePanel>
 	</div>
   </template>
   
+
   <script>
   import flyImage from '@/assets/fly.jpg';
   
