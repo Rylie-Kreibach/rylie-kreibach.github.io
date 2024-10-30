@@ -1,4 +1,5 @@
 <template>
+	<link href="fancy.css" type="text/css" rel="stylesheet"/>
 	<div id="app">
 	  <img :src="image" alt="Main Image"/>
 	  
@@ -27,6 +28,3 @@
   };
   </script>
   
-  <style>
-  @import 'fancy.css';
-  </style>
