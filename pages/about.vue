@@ -1,6 +1,6 @@
 <template>
 	<div id="app">
-        <img :src="image"/>
+        <img :src="image" alt="Main Image"/>
     </div>
 
 	<h1>Does this work?</h1>
@@ -14,19 +14,17 @@
 	</PrimePanel>
 
 	<PrimePanel header="Personal Atwork" class="my-6">
-		<img src="flyImage" alt="Fly Image">
+		<img :src="flyImage" alt="Fly Image">
 	</PrimePanel>
 </template>
 
 <script>
 export default
 {
-	data()
-	{
-		return 
-		{
-			image: require('@/assets/fly.jpg')
-			flyImage: require*'@/assets/fly.jpg'
+	data(){
+		return {
+			image: require('@/assets/fly.jpg'),
+			flyImage: require('@/assets/fly.jpg')
 		};
 	}
 };
