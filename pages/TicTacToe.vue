@@ -1,6 +1,8 @@
 <template>
     <title>Tic Tac Toe</title>
     <link href="fancy.css" type="text/css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="script.js" type="text/javascript"></script>
     
 	<PrimePanel header="Hello!" class="my-6">
 		Example new page
@@ -37,6 +39,5 @@
             
         </body>
 	</PrimePanel>
-    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-    <script src="script.js" type="text/javascript"></script>
+    
 </template>

@@ -8,11 +8,14 @@
     color: teal;
 }
 
-/* .image_size {
-	width: 100px; 
-	height: auto; 
-	max-width: 100%; 
-  } */
+h1{
+    font-size: 4em;
+    color: teal;
+    font-weight: bold; 
+    text-align: center;
+    background-color: ghostwhite;
+    font-family: Calibri;
+}
 
 p /* element or tag based or*/
 {
