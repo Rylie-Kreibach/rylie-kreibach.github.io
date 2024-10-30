@@ -1,5 +1,5 @@
 <script setup>
-
+	<link href="fancy.css" type="text/css" rel="stylesheet"/>
 </script>
 <template>
 	<header>

@@ -1,8 +1,6 @@
 <template>
     <title>Tic Tac Toe</title>
     <link href="fancy.css" type="text/css" rel="stylesheet"/>
-    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-    <script src="script.js" type="text/javascript"></script>
     
 	<PrimePanel header="Hello!" class="my-6">
 		Example new page
@@ -41,3 +39,17 @@
 	</PrimePanel>
     
 </template>
+
+<script>
+// Import your JavaScript file
+import script from '@/assets/script.js';
+
+export default {
+  mounted() {
+    // Call a function from your script.js if it exports one
+    if (typeof script.init === 'function') {
+      script.init(); // Assuming you have an init function
+    }
+  }
+};
+</script>
