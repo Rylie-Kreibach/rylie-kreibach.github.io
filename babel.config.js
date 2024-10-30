@@ -3,7 +3,7 @@ module.exports = {
       '@nuxt/babel-preset-app' // Default Nuxt preset for applications
     ],
     plugins: [
-      // You can add other plugins here if needed
-    ]
+        '@babel/plugin-transform-react-jsx' // Transform JSX to React.createElement calls
+      ]
   };
   

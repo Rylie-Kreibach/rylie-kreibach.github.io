@@ -14,6 +14,8 @@
         "vue": "^3.5.12"
     },
     "devDependencies": {
+        "@babel/plugin-transform-react-jsx": "^7.25.9",
+        "@babel/preset-react": "^7.25.9",
         "@nuxt/devtools": "latest",
         "@nuxtjs/tailwindcss": "latest",
         "@primevue/nuxt-module": "^4.1.1",
