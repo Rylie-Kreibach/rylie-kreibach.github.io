@@ -14,18 +14,18 @@
 	</PrimePanel>
 
 	<PrimePanel header="Personal Atwork" class="my-6">
-		<img :src="flyImage" alt="Fly Image">
+		<img src="/fly.jpg" alt="Fly Image">
 	</PrimePanel>
 </template>
 
-<script>
-export default
-{
-	data(){
-		return {
-			image: require('@/assets/fly.jpg'),
-			flyImage: require('@/assets/fly.jpg')
-		};
-	}
-};
-</script>
+<!-- <script> -->
+// export default
+// {
+// 	data(){
+// 		return {
+// 			image: require('@/assets/fly.jpg'),
+// 			flyImage: require('@/assets/fly.jpg')
+// 		};
+// 	}
+// };
+// </script>
