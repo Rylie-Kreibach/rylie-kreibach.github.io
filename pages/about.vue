@@ -6,7 +6,7 @@
 	  <h1>Does this work?</h1>
 	  
 	  <PrimePanel header="About Me!" class="my-6">
-		<h2>Play a game of 1 truth</h2>
+		<h3>Play a game of 1 truth</h3>
 		
 		<ol> 
 			<li>I've climbed 7 14'ners</li>
@@ -15,7 +15,7 @@
 			<li>I've traveled to 31 states</li>
 		</ol>
 
-		<h2>Make a guess</h2>
+		<h3>Make a guess</h3>
 		<!-- This mini question thing is heavily based/(essentially copied really) from vue.js website -->
 		<div v-for="(question, index) in questions" :key="index">
 			<p>{{ question.text }}</p>
@@ -37,6 +37,11 @@
 		<PrimeButton label="Just a button!" icon="pi pi-check" />
 	  </PrimePanel>
 	
+	  <PrimePanel header="Just some links" class="my-6">
+			<p><a href="https://www.google.com">Google</a> my lord and savior on this project</p>
+
+	  </PrimePanel>
+
 	  <PrimePanel header="" class="my-6">
 		<h1>Personal Artwork</h1>
 		<p>I had <b>no idea</b> what to include for the photo section, so here are so projects I made in highschool.
@@ -112,24 +117,6 @@
 		methods: {
 			checkAnswer(index) {
 				this.showResult[index] = true; //If value == correctanswer
-			}
-		},
-		data() {
-			return {
-				board: [
-				['', '', ''],
-				['', '', ''],
-				['', '', '']
-				],
-				currentTurn: 'X',
-			};
-		},
-		methods: {
-			makeMove(row, col) {
-				if (this.board[row][col] === '') {
-					this.$set(this.board[row], col, this.currentTurn);
-					this.currentTurn = this.currentTurn === 'X' ? 'O' : 'X'; // Switch turns
-				}
 			}
 		}
 	};

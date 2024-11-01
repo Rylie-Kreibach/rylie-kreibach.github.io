@@ -25,12 +25,19 @@ h2{
     font-family: cursive;
 }
 
+h2{
+    font-size: 2em;
+    color: midnightblue;
+    font-weight: bold; 
+    
+}
+
 p /* element or tag based or*/
 {
     font-size: 1.2em;
 }
 
-p1{
+#center{
     font-size: 1.5em;
     text-align: center;
 }
