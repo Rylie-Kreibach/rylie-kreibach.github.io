@@ -8,12 +8,12 @@
 	  <PrimePanel header="About Me!" class="my-6">
 		<h2>Play a game of 1 truth</h2>
 		
-		<ol> 
-			<li>I've climbed 7 14'ners</li>
-			<li>I speak 2 languages</li>
-			<li>I've been on 3 cruises</li>
-			<li>I've traveled to 31 states</li>
-		</ol>
+		<li> 
+			<ol>I've climbed 7 14'ners</ol>
+			<ol>I speak 2 languages</ol>
+			<ol>I've been on 3 cruises</ol>
+			<ol>I've traveled to 31 states</ol>
+		</li>
 
 		<h2>Make a guess</h2>
 		<div v-for="(question, index) in questions" :key="index">
@@ -33,7 +33,7 @@
 			</p>
 	    </div>	
 
-		<PrimeButton label="Button!" icon="pi pi-check" />
+		<PrimeButton label="Just a button!" icon="pi pi-check" />
 	  </PrimePanel>
 	
 	  <PrimePanel header="" class="my-6">
@@ -76,23 +76,18 @@
 
 		questions: [
 		  {
-			text: "What is the capital of France?",
+			text: "Which is the truth",
 			options: [
-			  { text: "Berlin", value: "berlin" },
-			  { text: "Paris", value: "paris" },
-			  { text: "Madrid", value: "madrid" }
+			  { text: "I've climbed 7 14'ners", value: "mou" },
+			  { text: "I speak 2 languages", value: "lan" },
+			  { text: "I've been on 3 cruises", value: "cru" }
+			  { text: "I've traveled to 31 states", value: "sta" }
 			],
-			correctAnswer: "paris"
-		  },
-		  {
-			text: "What is the largest ocean in the world?",
-			options: [
-			  { text: "Atlantic Ocean", value: "atlantic" },
-			  { text: "Indian Ocean", value: "indian" },
-			  { text: "Pacific Ocean", value: "pacific" }
-			],
-			correctAnswer: "pacific"
-		  }
+			correctAnswer: "mou"
+
+		
+		
+		},
 		],
 		selectedOptions: [],
 		showResult: []
