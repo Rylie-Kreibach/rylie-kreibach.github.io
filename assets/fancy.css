@@ -30,6 +30,11 @@ p /* element or tag based or*/
     font-size: 1.2em;
 }
 
+p1{
+    font-size: 1.5em;
+    text-align: center;
+}
+
 td{
     border: 5px solid black;
     width: 100px;

@@ -16,6 +16,7 @@
 		</ol>
 
 		<h2>Make a guess</h2>
+		<!-- This mini question thing is heavily based/(essentially copied really) from vue.js website -->
 		<div v-for="(question, index) in questions" :key="index">
 			<p>{{ question.text }}</p>
 			<div v-for="(option, optionIndex) in question.options" :key="optionIndex">
@@ -32,7 +33,7 @@
 			{{ selectedOptions[index].includes(question.correctAnswer) ? "Correct!" : "Incorrect." }}
 			</p>
 	    </div>	
-
+		<br><br>
 		<PrimeButton label="Just a button!" icon="pi pi-check" />
 	  </PrimePanel>
 	
@@ -53,6 +54,20 @@
 		<img :src="zigImage" alt="zig Image" class="image_size"/>
 	  </PrimePanel>
 	</div>
+
+	<PrimePanel header="" class="my-6">
+      <h1>Want to play <b>Tic Tac Toe?</b></h1>
+      <div id="turn">{{ currentTurn }}'s Turn</div>
+      <table>
+        <tbody>
+          <tr v-for="(row, rowIndex) in board" :key="rowIndex">
+            <td v-for="(cell, colIndex) in row" :key="colIndex" @click="makeMove(rowIndex, colIndex)">
+              {{ cell }}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </PrimePanel>
 </template>
   
 
@@ -61,42 +76,63 @@
   import candleImage from '@/assets/candle.jpg';
   import flowerImage from '@/assets/flower.jpg';
   import zigImage from '@/assets/zig.jpg';
-  
-  export default {
-	data() {
-	  return {
-		image: flyImage,
-		flyImage: flyImage,
-		image: candleImage,
-		candleImage: candleImage,
-		image: flowerImage,
-		flowerImage: flowerImage,
-		image: zigImage,
-		zigImage: zigImage,
-	  
+//   connects the image files from the assets folder to the webpage
 
-      questions: [
-        {
-          text: "Which is the truth?",
-          options: [
-            { text: "I've climbed 7 14'ners", value: "mou" },
-            { text: "I speak 2 languages", value: "lan" },
-            { text: "I've been on 3 cruises", value: "cru" },
-            { text: "I've traveled to 31 states", value: "sta" }
-          ],
-          correctAnswer: "mou"
-        }
-      ],
-      selectedOptions: {},
-      showResult: []
-    };
-  },
-  methods: {
-    checkAnswer(index) {
-      this.showResult[index] = true;
-    }
-  }
-};
+  	export default {
+		data() {
+			return {
+				// Does some naming magic, so it's useable. 
+				// I don't know exactly what it does, but if you don't do it nothing loads in. 
+				// Or, if you mix up the names, it loads in the wrong photo. That was fun to solve
+				image: flyImage,
+				flyImage: flyImage,
+				image: candleImage,
+				candleImage: candleImage,
+				image: flowerImage,
+				flowerImage: flowerImage,
+				image: zigImage,
+				zigImage: zigImage,
+			
+			questions: [
+			{
+			text: "Which is the truth?",
+			options: [ //Index of options. Text: str, value is the variables value when selected
+				{ text: "I've climbed 7 14'ners", value: "mou" },
+				{ text: "I speak 2 languages", value: "lan" },
+				{ text: "I've been on 3 cruises", value: "cru" },
+				{ text: "I've traveled to 31 states", value: "sta" }
+			],
+			correctAnswer: "mou" 
+			}
+		],
+		selectedOptions: {}, //Clicked items
+		showResult: []       //Correct or incorrect
+		};
+		},
+		methods: {
+			checkAnswer(index) {
+				this.showResult[index] = true; //If value == correctanswer
+			}
+		},
+		data() {
+			return {
+				board: [
+				['', '', ''],
+				['', '', ''],
+				['', '', '']
+				],
+				currentTurn: 'X',
+			};
+		},
+		methods: {
+			makeMove(row, col) {
+				if (this.board[row][col] === '') {
+					this.$set(this.board[row], col, this.currentTurn);
+					this.currentTurn = this.currentTurn === 'X' ? 'O' : 'X'; // Switch turns
+				}
+			}
+		}
+	};
 
 </script>
 
