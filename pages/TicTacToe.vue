@@ -20,7 +20,7 @@
     </PrimePanel>
 </template>
   
-<style scoped src="@/assets/fancy.css"></style>
+
 
 <script>
   export default {

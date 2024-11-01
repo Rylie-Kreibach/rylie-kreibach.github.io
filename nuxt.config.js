@@ -19,9 +19,13 @@ export default defineNuxtConfig({
     
     router: {
       base: '/rylie-kreibach.github.io/'
-    }
-    
-    
+    },
+   
+    css: [
+      '@/assets/fancy.css'
+    ],
+  
+   
 });
 
 

@@ -28,7 +28,6 @@
 	</div>
 </template>
   
-<style scoped src="@/assets/fancy.css"></style>
 
 <script>
   import flyImage from '@/assets/fly.jpg';

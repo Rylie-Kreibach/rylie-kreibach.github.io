@@ -1,4 +1,4 @@
-<style scoped src="@/assets/fancy.css"></style>
+
 
 <template>
 	<header>
