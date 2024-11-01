@@ -1,3 +1,7 @@
+</script setup>
+  import './assets/fancy.css';
+</script>
+
 <template>
     <PrimePanel header="Hello!" class="my-6">
       Example new page
@@ -16,9 +20,9 @@
         </tbody>
       </table>
     </PrimePanel>
-  </template>
+</template>
   
-  <script>
+<script>
   export default {
     data() {
       return {
@@ -39,8 +43,6 @@
       }
     }
   };
+</script>
 
-  </script setup>
-    import './assets/fancy.css';
-  </style>
   

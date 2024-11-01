@@ -1,3 +1,7 @@
+</script setup>
+import './assets/fancy.css';
+</script>
+
 <template>
 	<div id="app">
 	  
@@ -24,11 +28,9 @@
 		<img :src="zigImage" alt="zig Image" class="image_size"/>
 	  </PrimePanel>
 	</div>
-  </template>
+</template>
   
-</script setup>
-import './assets/fancy.css';
-</style>
+
 
 <script>
   import flyImage from '@/assets/fly.jpg';
