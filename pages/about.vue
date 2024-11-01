@@ -28,10 +28,9 @@
 	</div>
 </template>
   
-
+<style scoped src="@/assets/fancy.css"></style>
 
 <script>
-  import './assets/fancy.css';
   import flyImage from '@/assets/fly.jpg';
   import candleImage from '@/assets/candle.jpg';
   import flowerImage from '@/assets/flower.jpg';

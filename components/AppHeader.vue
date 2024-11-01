@@ -1,6 +1,4 @@
-<script>
-	import './assets/fancy.css';
-</script>
+<style scoped src="@/assets/fancy.css"></style>
 
 <template>
 	<header>

@@ -20,8 +20,9 @@
     </PrimePanel>
 </template>
   
+<style scoped src="@/assets/fancy.css"></style>
+
 <script>
-  import './assets/fancy.css';
   export default {
     data() {
       return {
