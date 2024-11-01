@@ -10,15 +10,15 @@
 	
 	  <PrimePanel header="Personal Artwork" class="my-6">
 		<h1>I had no idea what to include for the photo section, so here are so projects I made in highschool.</h1>
-		<p>I made this one as a gift to my first employer, whom I babysat for. <br>July, 2024</p>
+		<p><br>I made this one as a gift to my first employer, whom I babysat for. <br>July, 2024</p>
 		<img :src="flyImage" alt="Fly Image" class="image_size"/>
-		<p>This was the first time I dealt with acrylic. I did it for a class, but I ended up really enjoying it. 
+		<p><br>This was the first time I dealt with acrylic. I did it for a class, but I ended up really enjoying it. 
 			A little unfinished in the details though.
 			<br>May, 2024</p>
 		<img :src="candleImage" alt="Candle Image" class="image_size"/>
-		<p>My favorite watercolor assignment. I just really like it. <br>Dec, 2023</p>
+		<p><br>My favorite watercolor assignment. I just really like it. <br>Dec, 2023</p>
 		<img :src="flowerImage" alt="Flower Image" class="image_size"/>
-		<p>This is just some random artwork I did Covid year in illustration 1. 
+		<p><br>This is just some random artwork I did Covid year in illustration 1. 
 			I only choose this one because it has a clear picture and I found it pretty quickly. It's <i>kinda</i> fun to look at.
 			<br>Dec, 2020</p>
 		<img :src="zigImage" alt="zig Image" class="image_size"/>
@@ -26,15 +26,11 @@
 	</div>
   </template>
   
-  <style scoped>
-  .image_size {
-	width: 300px; /* Set the desired width */
-	height: auto; /* Maintain aspect ratio */
-	max-width: 100%; /* Ensure it doesn't exceed the container's width */
-  }
-  </style>
+</script setup>
+import './assets/fancy.css';
+</style>
 
-  <script>
+<script>
   import flyImage from '@/assets/fly.jpg';
   import candleImage from '@/assets/candle.jpg';
   import flowerImage from '@/assets/flower.jpg';
@@ -48,5 +44,5 @@
 	  };
 	}
   };
-  </script>
+</script>
   

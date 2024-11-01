@@ -3,8 +3,8 @@
       Example new page
     </PrimePanel>
     
-    <PrimePanel header="Does this work?" class="my-6">
-      <h1>Play Tic Tac Toe</h1>
+    <PrimePanel header="\" class="my-6">
+      <h1>Want to play <b>Tic Tac Toe?</b></h1>
       <div id="turn">{{ currentTurn }}'s Turn</div>
       <table>
         <tbody>
@@ -39,26 +39,8 @@
       }
     }
   };
-  </script>
-  
-  <style scoped>
-  /* Add your CSS here for styling the table and cells */
-  table {
-    border-collapse: collapse;
-    margin: 20px 0;
-  }
-  
-  td {
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    border: 1px solid #000;
-    cursor: pointer;
-    font-size: 24px;
-  }
-  
-  td:hover {
-    background-color: #f0f0f0;
-  }
+
+  </script setup>
+    import './assets/fancy.css';
   </style>
   

@@ -22,14 +22,23 @@ p /* element or tag based or*/
     font-size: 1.2em;
 }
 
-td
-{
+td{
     border: 5px solid black;
     width: 100px;
     height: 100px;
     font-size: 80px;
     text-align: center;
     font-family: sans;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+
+td:hover {
+background-color: #f0f0f0;
 }
 
 #turn 
@@ -60,4 +69,10 @@ tr:nth-child(1) > td
 tr:nth-child(3) > td
 {
     border-bottom: none;
+}
+
+.image_size {
+  width: 300px; /* Set the desired width */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 100%; /* Ensure it doesn't exceed the container's width */
 }
