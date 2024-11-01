@@ -64,12 +64,16 @@
   
   export default {
 	data() {
-	//   return {
-	// 	image: flyImage,
-	// 	flyImage: flyImage
-	//   }
-
 	  return {
+		image: flyImage,
+		flyImage: flyImage,
+		image: candleImage,
+		candleImage: candleImage,
+		image: flowerImage,
+		candleImage: flowerImage,
+		image: zigImage,
+		candleImage: zigImage,
+
 		questions: [
 		  {
 			text: "What is the capital of France?",
