@@ -70,9 +70,9 @@
 		image: candleImage,
 		candleImage: candleImage,
 		image: flowerImage,
-		candleImage: flowerImage,
+		flowerImage: flowerImage,
 		image: zigImage,
-		candleImage: zigImage,
+		zigImage: zigImage,
 
 		questions: [
 		  {
@@ -80,14 +80,12 @@
 			options: [
 			  { text: "I've climbed 7 14'ners", value: "mou" },
 			  { text: "I speak 2 languages", value: "lan" },
-			  { text: "I've been on 3 cruises", value: "cru" }
+			  { text: "I've been on 3 cruises", value: "cru" },
 			  { text: "I've traveled to 31 states", value: "sta" }
 			],
 			correctAnswer: "mou"
 
-		
-		
-		},
+			},
 		],
 		selectedOptions: [],
 		showResult: []
