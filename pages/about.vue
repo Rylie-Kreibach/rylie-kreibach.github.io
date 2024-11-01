@@ -8,19 +8,19 @@
 	  <PrimePanel header="About Me!" class="my-6">
 		<h2>Play a game of 1 truth</h2>
 		
-		<li> 
-			<ol>I've climbed 7 14'ners</ol>
-			<ol>I speak 2 languages</ol>
-			<ol>I've been on 3 cruises</ol>
-			<ol>I've traveled to 31 states</ol>
-		</li>
+		<ol> 
+			<li>I've climbed 7 14'ners</li>
+			<li>I speak 2 languages</li>
+			<li>I've been on 3 cruises</li>
+			<li>I've traveled to 31 states</li>
+		</ol>
 
 		<h2>Make a guess</h2>
 		<div v-for="(question, index) in questions" :key="index">
 			<p>{{ question.text }}</p>
 			<div v-for="(option, optionIndex) in question.options" :key="optionIndex">
 				<input 
-					type="checkbox" 
+					type="radio" 
 					:id="`option-${index}-${optionIndex}`" 
 					v-model="selectedOptions[index]" 
 					:value="option.value" 
@@ -73,31 +73,75 @@
 		flowerImage: flowerImage,
 		image: zigImage,
 		zigImage: zigImage,
+	  
 
-		questions: [
-		  {
-			text: "Which is the truth",
-			options: [
-			  { text: "I've climbed 7 14'ners", value: "mou" },
-			  { text: "I speak 2 languages", value: "lan" },
-			  { text: "I've been on 3 cruises", value: "cru" },
-			  { text: "I've traveled to 31 states", value: "sta" }
-			],
-			correctAnswer: "mou"
+      questions: [
+        {
+          text: "Which is the truth?",
+          options: [
+            { text: "I've climbed 7 14'ners", value: "mou" },
+            { text: "I speak 2 languages", value: "lan" },
+            { text: "I've been on 3 cruises", value: "cru" },
+            { text: "I've traveled to 31 states", value: "sta" }
+          ],
+          correctAnswer: "mou"
+        }
+      ],
+      selectedOptions: {},
+      showResult: []
+    };
+  },
+  methods: {
+    checkAnswer(index) {
+      this.showResult[index] = true;
+    }
+  }
+};
 
-			},
-		],
-		selectedOptions: [],
-		showResult: []
-	  };
-	},
-	methods: {
-	  checkAnswer(index) {
-		this.showResult[index] = true;
-	  }
-	}
-  };
 </script>
+
+
+//   import flyImage from '@/assets/fly.jpg';
+//   import candleImage from '@/assets/candle.jpg';
+//   import flowerImage from '@/assets/flower.jpg';
+//   import zigImage from '@/assets/zig.jpg';
+  
+//   export default {
+// 	data() {
+// 	  return {
+// 		image: flyImage,
+// 		flyImage: flyImage,
+// 		image: candleImage,
+// 		candleImage: candleImage,
+// 		image: flowerImage,
+// 		flowerImage: flowerImage,
+// 		image: zigImage,
+// 		zigImage: zigImage,
+
+// 		questions: [
+// 		  {
+// 			text: "Which is the truth",
+// 			options: [
+// 			  { text: "I've climbed 7 14'ners", value: "mou" },
+// 			  { text: "I speak 2 languages", value: "lan" },
+// 			  { text: "I've been on 3 cruises", value: "cru" },
+// 			  { text: "I've traveled to 31 states", value: "sta" }
+// 			],
+// 			correctAnswer: "mou"
+
+// 			},
+// 		],
+// 		selectedOptions: [],
+// 		showResult: []
+// 	  };
+// 	},
+// 	methods: {
+// 	  checkAnswer(index) {
+// 		this.showResult[index] = true;
+// 	  }
+// 	}
+//   };
+
   
 
 
