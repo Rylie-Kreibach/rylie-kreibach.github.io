@@ -17,6 +17,14 @@ h1{
     font-family: Calibri;
 }
 
+h2{
+    font-size: 2.5em;
+    color: midnightblue;
+    font-weight: bold; 
+    text-align: center;
+    font-family: cursive;
+}
+
 p /* element or tag based or*/
 {
     font-size: 1.2em;
@@ -34,6 +42,7 @@ td{
 table {
     border-collapse: collapse;
     margin: 20px 0;
+    text-align: center;
 }
 
 
@@ -46,9 +55,11 @@ background-color: #f0f0f0;
     font-weight: bold;
     text-transform: capitalize;
     text-align: center;
-    font-size: 16pt;
+    font-size: 24pt;
     background-color: teal;
+    color: white;
     width: 340px;
+    text-align: center;
 }
 
 td:nth-child(1) 

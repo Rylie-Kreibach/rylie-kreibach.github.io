@@ -48,5 +48,3 @@ function toggleDarkMode() {
 		</template>
 	</PrimeMenubar>
 </template>
-
-<style scoped></style>

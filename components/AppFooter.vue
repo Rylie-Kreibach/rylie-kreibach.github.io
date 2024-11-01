@@ -1,5 +1,5 @@
 <template>
 	<footer>
-		<p>The foot</p>
+		<p>2024</p>
 	</footer>
 </template>

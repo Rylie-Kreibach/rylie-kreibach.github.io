@@ -2,10 +2,10 @@
 
 <template>
     <PrimePanel header="Hello!" class="my-6">
-      Example new page
+      Welcome to the game page! Look at this awesome list of games. I mean there's just so many options...
     </PrimePanel>
     
-    <PrimePanel header="\" class="my-6">
+    <PrimePanel header="" class="my-6">
       <h1>Want to play <b>Tic Tac Toe?</b></h1>
       <div id="turn">{{ currentTurn }}'s Turn</div>
       <table>
