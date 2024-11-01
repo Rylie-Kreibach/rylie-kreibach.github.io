@@ -8,14 +8,22 @@
 	  <PrimePanel header="About Me!" class="my-6">
 		<h3>Play a game of 1 truth</h3>
 		
+
+		<ol>
+			<li v-for="(item, index) in items">
+			{{ index + 1 }}. {{ item }}
+			</li>
+		</ol>
+		<br>
+		<!-- so just plan html lists weren't working
 		<ol> 
 			<li>I've climbed 7 14'ners</li>
 			<li>I speak 2 languages</li>
 			<li>I've been on 3 cruises</li>
 			<li>I've traveled to 31 states</li>
-		</ol>
+		</ol> -->
 
-		<h3>Make a guess</h3>
+
 		<!-- This mini question thing is heavily based/(essentially copied really) from vue.js website -->
 		<div v-for="(question, index) in questions" :key="index">
 			<p>{{ question.text }}</p>
@@ -74,6 +82,7 @@
 
   	export default {
 		data() {
+      		items: ["I've climbed 7 14'ners", 'I speak 2 languages', "I've been on 3 cruises", "I've traveled to 31 states"]
 			return {
 				// Does some naming magic, so it's useable. 
 				// I don't know exactly what it does, but if you don't do it nothing loads in. 

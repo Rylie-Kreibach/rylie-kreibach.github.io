@@ -13,16 +13,16 @@ h1{
     color: teal;
     font-weight: bold; 
     text-align: center;
-    background-color: rgb(198, 198, 200);
+    background-color: rgb(234, 234, 234);
     font-family: Calibri;
 }
 
 h2{
     font-size: 2.5em;
-    color: midnightblue;
+    color: rgb(86, 32, 147);
     font-weight: bold; 
     text-align: center;
-    font-family: cursive;
+    font-family: fantasy;
 }
 
 h2{
