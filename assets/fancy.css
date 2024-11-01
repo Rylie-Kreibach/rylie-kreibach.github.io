@@ -13,7 +13,7 @@ h1{
     color: teal;
     font-weight: bold; 
     text-align: center;
-    background-color: ghostwhite;
+    background-color: rgb(198, 198, 200);
     font-family: Calibri;
 }
 
@@ -29,12 +29,17 @@ h2{
     font-size: 2em;
     color: midnightblue;
     font-weight: bold; 
-    
+
 }
 
 p /* element or tag based or*/
 {
     font-size: 1.2em;
+}
+
+a{
+    color:teal;
+    font-size: 1.3em;
 }
 
 #center{

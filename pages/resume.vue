@@ -1,9 +1,9 @@
 
 
 <template>
-  <PrimePanel header="Resume!" class="my-6">
+  <PrimePanel class="my-6">
     
-    <h1>Terroryaki the <span style= "color: #000000; font-family: ‘Indie Flower’, cursive !important;">Menacing chicken</span></h1>
+    <h1>Terroryaki the <span style= "color: #000000; font-family: 'fantasy’, fantasy !important;">Menacing chicken</span></h1>
     
     <div id="center">
       <h2>contact Info</h2>

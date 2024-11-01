@@ -28,13 +28,14 @@
 				/>
 				<label :for="`option-${index}-${optionIndex}`">{{ option.text }}</label>
 			</div>
-			<button @click="checkAnswer(index)">Check Answer</button>
+			<Primebutton @click="checkAnswer(index)" label="Check Answer" icon="pi pi-check"/>
+			<!-- <button @click="checkAnswer(index)">Check Answer</button> -->
 			<p v-if="showResult[index]">
 			{{ selectedOptions[index].includes(question.correctAnswer) ? "Correct!" : "Incorrect." }}
 			</p>
 	    </div>	
 		<br><br>
-		<PrimeButton label="Just a button!" icon="pi pi-check" />
+		<!-- <PrimeButton label="Just a button!" icon="pi pi-check" /> -->
 	  </PrimePanel>
 	
 	  <PrimePanel header="Just some links" class="my-6">
@@ -60,19 +61,7 @@
 	  </PrimePanel>
 	</div>
 
-	<PrimePanel header="" class="my-6">
-      <h1>Want to play <b>Tic Tac Toe?</b></h1>
-      <div id="turn">{{ currentTurn }}'s Turn</div>
-      <table>
-        <tbody>
-          <tr v-for="(row, rowIndex) in board" :key="rowIndex">
-            <td v-for="(cell, colIndex) in row" :key="colIndex" @click="makeMove(rowIndex, colIndex)">
-              {{ cell }}
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </PrimePanel>
+	
 </template>
   
 
@@ -122,50 +111,3 @@
 	};
 
 </script>
-
-
-//   import flyImage from '@/assets/fly.jpg';
-//   import candleImage from '@/assets/candle.jpg';
-//   import flowerImage from '@/assets/flower.jpg';
-//   import zigImage from '@/assets/zig.jpg';
-  
-//   export default {
-// 	data() {
-// 	  return {
-// 		image: flyImage,
-// 		flyImage: flyImage,
-// 		image: candleImage,
-// 		candleImage: candleImage,
-// 		image: flowerImage,
-// 		flowerImage: flowerImage,
-// 		image: zigImage,
-// 		zigImage: zigImage,
-
-// 		questions: [
-// 		  {
-// 			text: "Which is the truth",
-// 			options: [
-// 			  { text: "I've climbed 7 14'ners", value: "mou" },
-// 			  { text: "I speak 2 languages", value: "lan" },
-// 			  { text: "I've been on 3 cruises", value: "cru" },
-// 			  { text: "I've traveled to 31 states", value: "sta" }
-// 			],
-// 			correctAnswer: "mou"
-
-// 			},
-// 		],
-// 		selectedOptions: [],
-// 		showResult: []
-// 	  };
-// 	},
-// 	methods: {
-// 	  checkAnswer(index) {
-// 		this.showResult[index] = true;
-// 	  }
-// 	}
-//   };
-
-  
-
-
- 
