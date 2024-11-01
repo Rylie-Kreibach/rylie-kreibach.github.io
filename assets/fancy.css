@@ -1,7 +1,3 @@
-#bold /*id-based rule*/
-{
-    font-weight: bold;
-}
 
 .teal /*class based rule */
 {
@@ -19,15 +15,15 @@ h1{
 
 h2{
     font-size: 2.5em;
-    color: rgb(86, 32, 147);
+    color: rgb(104, 42, 175);
     font-weight: bold; 
     text-align: center;
     font-family: fantasy;
 }
 
-h2{
+h3{
     font-size: 2em;
-    color: midnightblue;
+    color: rgb(86, 32, 147);
     font-weight: bold; 
 
 }
