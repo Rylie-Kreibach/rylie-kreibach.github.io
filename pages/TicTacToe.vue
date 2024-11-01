@@ -1,6 +1,4 @@
-</script setup>
-  import './assets/fancy.css';
-</script>
+
 
 <template>
     <PrimePanel header="Hello!" class="my-6">
@@ -23,6 +21,7 @@
 </template>
   
 <script>
+  import './assets/fancy.css';
   export default {
     data() {
       return {

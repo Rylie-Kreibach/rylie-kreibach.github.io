@@ -1,6 +1,4 @@
-</script setup>
-import './assets/fancy.css';
-</script>
+
 
 <template>
 	<div id="app">
@@ -33,6 +31,7 @@ import './assets/fancy.css';
 
 
 <script>
+  import './assets/fancy.css';
   import flyImage from '@/assets/fly.jpg';
   import candleImage from '@/assets/candle.jpg';
   import flowerImage from '@/assets/flower.jpg';

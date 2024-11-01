@@ -1,4 +1,4 @@
-<script setup>
+<script>
 	import './assets/fancy.css';
 </script>
 
