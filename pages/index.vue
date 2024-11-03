@@ -1,7 +1,6 @@
 <template>
 	<title>Home</title>
-	<PrimePanel header="Welcome to the playground!" class="my-6" id="indent">
-		Hello Website
+	<PrimePanel header="Welcome to Website..." class="my-6" id="indent">
 		<p><b>But</b> <i>sometimes</i> the sounds - like the pain - faded, and then there was only the haze. 
 			he remembered darkness: solid darkness hhad come before the haze. Did that mean he was making progress? 
 			Let there be light (even of the hazy variety), and the light wasgood, and so on and so on? 
@@ -14,7 +13,8 @@
 			those sounds were the only outer reality. He had no idea who he was or where he was
 			 and cared to know neither. He wished he was dead, but through the pain-soaked haze that 
 			 filled his mind like a summer storm-cloud, he did not know he wished it.</p>
-		<p><b>Stephen King's</b> <i>Misery</i> 1988 <br>Chapter 2</p>
+		<p><b>Stephen King's</b> <i>Misery</i> 1988 </p>
+		<p>Chapter 2</p>
 	</PrimePanel>
 
 	<PrimePanel header="" class="my-6">
@@ -44,19 +44,16 @@
 					currentTurn: 'X',
 			};
 		},
-		methods: {
-			checkAnswer(index) {
-				this.showResult[index] = true; //If value == correctanswer
-			},
-			
+		methods:{
 			makeMove(row, col) {
-				if (this.board[row][col] === '') {
+				console.log('Click @ row ${row}, col ${col}');
+			
+			
+				if (this.board[row][col] ===""){
 					this.$set(this.board[row], col, this.currentTurn);
 					this.currentTurn = this.currentTurn === 'X' ? 'O' : 'X'; // Switch turns
 				}
 			}
 		}
-			
-		
-	}
+	};
 </script>
