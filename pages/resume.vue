@@ -11,11 +11,13 @@
       <br>
       <p>115 George Chirpington Ln, Cluck Norris, Planet Earth </p>
     </div>
-    <div id="center">
+    <div>
       <h2>Education</h2>
-      <p>Yolkton High school    GPA: 1.3333333</p>
-      <p>Kansas State University</p>
-      <p>Masters in Terror Management</p>
+      <p>Yolkton High school</p>
+      <p>Graduated: 2000    GPA: 1.3333333</p>
+      <p><strong>Kansas State University</strong></p>
+      <p>Graduated: 2006    GPA: 1.3333333</p>
+      <p>Masters in <i>Terror</i> Management</p>
       <p>Bachelor in World Dominance</p>
 
 
@@ -23,17 +25,24 @@
     <div>
       <h2>Work Experience</h2>
       <h3>Assistant at Eggecutors</h3>
-      <p>May 2000, June 2022</p>
-      <p>Served as a assistant to the lord of death.</p>
-      <p>Did daily tasks such as organizing souls for filing, schedule management through chicken calendar, and learned neccesary tyrants behaviors</p>
-    
+      <p>May 2008 - June 2013</p>
+      <p>Assistant to the lord of death. Duties were:</p>
+      <li>Organized souls for filing</li>
+      <li>schedule management through chicken Hellendar</li> 
+      <li>Learned magnificant tyrannical behaviors</li>
+      <h3>Master chief at Chick-fil-a</h3>
+      <p>August 2013 - October 2013</p>
+      <p>Served as a chief at the local Chick-fil-a.</p>
+      <p>Learned to plot the demise of the world whilst cooking fries</p>
     </div>
     <div>
-      <h2>Skills</h2>
-      <!-- An eggcellence in  -->
+      <h2>Eggecellent Skills</h2>
+        <p>Microsoft boil and ShellPoint</p>
+        <p>Eggspertise in tyranny</p>
+        <p>Capable of winging high-pressure deadlines</p>
+        <p>Soft boil skills</p>
     </div>
   </PrimePanel>
-  
   
 </template>
 

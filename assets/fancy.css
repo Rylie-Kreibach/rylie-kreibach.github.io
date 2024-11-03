@@ -36,6 +36,7 @@ p /* element or tag based or*/
 a{
     color:teal;
     font-size: 1.3em;
+    text-decoration: underline;
 }
 
 #center{

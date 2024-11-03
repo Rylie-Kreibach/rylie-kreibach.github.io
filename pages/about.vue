@@ -100,10 +100,10 @@
 			{
 			text: "Which is the truth?",
 			options: [ //Index of options. Text: str, value is the variables value when selected
-				{ text: "I've climbed 7 14'ners", value: "mou" },
-				{ text: "I speak 2 languages", value: "lan" },
-				{ text: "I've been on 3 cruises", value: "cru" },
-				{ text: "I've traveled to 31 states", value: "sta" }
+				{ text: "1", value: "mou" },
+				{ text: "2", value: "lan" },
+				{ text: "3", value: "cru" },
+				{ text: "4", value: "sta" }
 			],
 			correctAnswer: "mou" 
 			}
