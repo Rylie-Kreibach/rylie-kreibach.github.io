@@ -82,8 +82,8 @@
 
   	export default {
 		data() {
-      		items: ["I've climbed 7 14'ners", 'I speak 2 languages', "I've been on 3 cruises", "I've traveled to 31 states"]
 			return {
+				items: ["I've climbed 7 14'ners", 'I speak 2 languages', "I've been on 3 cruises", "I've traveled to 31 states"],
 				// Does some naming magic, so it's useable. 
 				// I don't know exactly what it does, but if you don't do it nothing loads in. 
 				// Or, if you mix up the names, it loads in the wrong photo. That was fun to solve
