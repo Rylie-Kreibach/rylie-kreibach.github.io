@@ -49,7 +49,7 @@
 				console.log('Click @ row ${row}, col ${col}');
 			
 			
-				if (this.board[row][col] ===""){
+				if (this.board[row][col] ===''){
 					this.$set(this.board[row], col, this.currentTurn);
 					this.currentTurn = this.currentTurn === 'X' ? 'O' : 'X'; // Switch turns
 				}

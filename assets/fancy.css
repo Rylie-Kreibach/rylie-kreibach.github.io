@@ -55,11 +55,12 @@ td{
     font-size: 80px;
     text-align: center;
     font-family: sans;
+    cursor: pointer
 }
 
 table {
     border-collapse: collapse;
-    margin: 20px 0;
+    margin: 20px;
     text-align: center;
 }
 
