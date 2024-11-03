@@ -46,11 +46,11 @@
 		},
 		methods:{
 			makeMove(row, col) {
-				console.log('Click @ row ${row}, col ${col}');
+				console.log(`Click @ row ${row}, col ${col}`);
 			
 			
 				if (this.board[row][col] ===''){
-					this.$set(this.board[row], col, this.currentTurn);
+					this.board[row][col] = this.currentTurn;
 					this.currentTurn = this.currentTurn === 'X' ? 'O' : 'X'; // Switch turns
 				}
 			}
