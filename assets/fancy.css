@@ -4,6 +4,10 @@
     color: teal;
 }
 
+#indent{
+    text-indent: 30px;
+}
+
 h1{
     font-size: 4em;
     color: teal;

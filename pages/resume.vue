@@ -36,11 +36,11 @@
       <p>Learned to plot the demise of the world whilst cooking fries</p>
     </div>
     <div>
-      <h2>Eggecellent Skills</h2>
-        <p>Microsoft boil and ShellPoint</p>
-        <p>Eggspertise in tyranny</p>
-        <p>Capable of winging high-pressure deadlines</p>
-        <p>Soft boil skills</p>
+      <h2>Egg-cellent Skills</h2>
+        <li>Microsoft boil and ShellPoint</li>
+        <li>Eggspertise in tyranny</li>
+        <li>Capable of winging high-pressure deadlines</li>
+        <li>Soft boil skills</li>
     </div>
   </PrimePanel>
   
