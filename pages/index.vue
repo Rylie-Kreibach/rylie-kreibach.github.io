@@ -27,7 +27,7 @@
           <tr v-for="(row, rowIndex) in board" :key="rowIndex"> <!--2d array: display board items-->
             <td v-for="(cell, colIndex) in row" :key="colIndex" @click="makeMove(rowIndex, colIndex)"> <!--When click box, call function in script to fill-->
 				
-              {{ cell }} //Display
+              {{ cell }} 
             </td>
           </tr>
         </tbody>
