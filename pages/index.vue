@@ -17,14 +17,16 @@
 		<p>Chapter 2</p>
 	</PrimePanel>
 
+
+	<!-- I found out that Jquery apparently doesn't play nice with Vue.js, so this is the version I could get to work. -->
 	<PrimePanel header="" class="my-6">
       <h1>Want to play <b>Tic Tac Toe?</b></h1>
-      <div id="turn">{{ currentTurn }}'s Turn</div>
+      <div id="turn">{{ currentTurn }}'s Turn</div> //Show turn
       <table>
         <tbody>
-          <tr v-for="(row, rowIndex) in board" :key="rowIndex">
-            <td v-for="(cell, colIndex) in row" :key="colIndex" @click="makeMove(rowIndex, colIndex)">
-              {{ cell }}
+          <tr v-for="(row, rowIndex) in board" :key="rowIndex"> //2d array: display board items
+            <td v-for="(cell, colIndex) in row" :key="colIndex" @click="makeMove(rowIndex, colIndex)"> #When click box, call function in script to fill
+              {{ cell }} //Display
             </td>
           </tr>
         </tbody>
@@ -36,22 +38,22 @@
 	export default {
 		data() {
 			return {
-				board: [
+				board: [ //Tic Tac board
 					['', '', ''],
 					['', '', ''],
 					['', '', '']
 					],
-					currentTurn: 'X',
+					currentTurn: 'X', //Start turn
 			};
 		},
 		methods:{
 			makeMove(row, col) {
-				console.log(`Click @ row ${row}, col ${col}`);
+				// console.log(`Click @ row ${row}, col ${col}`);
 			
 			
-				if (this.board[row][col] ===''){
-					this.board[row][col] = this.currentTurn;
-					this.currentTurn = this.currentTurn === 'X' ? 'O' : 'X'; // Switch turns
+				if (this.board[row][col] ===''){ //IF box is empty
+					this.board[row][col] = this.currentTurn; //Place mark
+					this.currentTurn = this.currentTurn === 'X' ? 'O' : 'X'; //Switch turns
 				}
 			}
 		}

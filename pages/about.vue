@@ -39,7 +39,7 @@
 			<Primebutton @click="checkAnswer(index)" label="Check Answer" icon="pi pi-check"/>
 			<!-- <button @click="checkAnswer(index)">Check Answer</button> -->
 			<p v-if="showResult[index]">
-			{{ selectedOptions[index].includes(question.correctAnswer) ? "Correct!" : "Incorrect." }}
+			{{ selectedOptions[index].includes(question.correctAnswer) ? "Correct!" : "Nope" }}
 			</p>
 	    </div>	
 		<br><br>
