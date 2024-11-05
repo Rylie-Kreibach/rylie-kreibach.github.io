@@ -80,22 +80,15 @@
 		<img :src="zigImage" alt="zig Image" class="image_size"/>
 	  </PrimePanel>
 	</div>
-
-	
 </template>
-  
-<style>
-	
-</style>
+
 
 <script>
-//   import VuePlyr from "vue-plyr"
-//   import "vue-plyr/dis/vue.plyr.css"
   import flyImage from '@/assets/fly.jpg';
   import candleImage from '@/assets/candle.jpg';
   import flowerImage from '@/assets/flower.jpg';
   import zigImage from '@/assets/zig.jpg';
-//   connects the image files from the assets folder to the webpage
+//connects the image files from the assets folder to the webpage
 
   	export default {
 		data() {
@@ -131,9 +124,6 @@
 				this.showResult[index] = true; //If value == correctanswer
 			}
 		}
-		// components: {
-		// 	VuePlyr
-		// }
 	};
 
 </script>

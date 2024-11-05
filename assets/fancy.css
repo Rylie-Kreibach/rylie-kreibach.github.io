@@ -1,11 +1,5 @@
 /*Linked to all documents with nuxt.config.js rather than individual linking*/
 
-
-.teal /*class based rule */
-{
-    color: teal;
-}
-
 #indent{
     text-indent: 30px;
 }
@@ -36,6 +30,10 @@ h3{
 
 p /* element or tag based or*/
 {
+    font-size: 1.2em;
+}
+
+li{
     font-size: 1.2em;
 }
 

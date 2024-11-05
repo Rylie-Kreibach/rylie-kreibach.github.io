@@ -45,10 +45,3 @@
   </PrimePanel>
   
 </template>
-
-
-
-<script>
-
-</script>
-
