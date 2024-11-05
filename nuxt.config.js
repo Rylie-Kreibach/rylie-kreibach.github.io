@@ -1,17 +1,17 @@
 export default defineNuxtConfig({
     modules: ["@nuxtjs/tailwindcss", "@primevue/nuxt-module"],
     
-    plugins: [{ src: './plugins/vue-plyr.js', ssr: false }],
-    build: {
-      rollupOptions: {
-        external: ["vue-plyr"],
-      },
-    },
-    vite: {
-      optimizeDeps: {
-        include: ["vue-plyr"],
-      },
-    },
+    plugins: [{ src: '~/plugins/vue-plyr.js', ssr: false }],
+    // build: {
+    //   rollupOptions: {
+    //     external: ["vue-plyr"],
+    //   },
+    // },
+    // vite: {
+    //   optimizeDeps: {
+    //     include: ["vue-plyr"],
+    //   },
+    // },
     primevue: {
         /* Configuration */
         components: {
