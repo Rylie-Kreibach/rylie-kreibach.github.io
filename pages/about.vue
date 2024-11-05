@@ -48,6 +48,15 @@
 	
 	  <PrimePanel header="Just some links" class="my-6">
 			<p><a href="https://www.google.com">Google</a> my lord and savior on this project</p>
+			
+			<vue-plyr>
+				<div class="plyr__video-embed">
+					<iframe
+						src="https://www.youtube.com/watch?v=ktgxMtWMflU&t=1siv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+						allowfullscreen allowtransparency allow="autoplay">
+					</iframe>
+				</div>
+			</vue-plyr>
 
 	  </PrimePanel>
 
@@ -72,8 +81,13 @@
 	
 </template>
   
+<style>
+	
+</style>
 
 <script>
+  import VuePlyr from "vue-plyr"
+  import "vue-plyr/dis/vue.plyr.css"
   import flyImage from '@/assets/fly.jpg';
   import candleImage from '@/assets/candle.jpg';
   import flowerImage from '@/assets/flower.jpg';
@@ -116,6 +130,9 @@
 			checkAnswer(index) {
 				this.showResult[index] = true; //If value == correctanswer
 			}
+		},
+		components: {
+			VuePlyr
 		}
 	};
 
