@@ -101,13 +101,10 @@
 				// Does some naming magic, so it's useable. 
 				// I don't know exactly what it does, but if you don't do it nothing loads in. 
 				// Or, if you mix up the names, it loads in the wrong photo. That was fun to solve
-				image: flyImage,
+				
 				flyImage: flyImage,
-				image: candleImage,
 				candleImage: candleImage,
-				image: flowerImage,
 				flowerImage: flowerImage,
-				image: zigImage,
 				zigImage: zigImage,
 			
 			questions: [

@@ -1,5 +1,7 @@
 export default defineNuxtConfig({
     modules: ["@nuxtjs/tailwindcss", "@primevue/nuxt-module"],
+    
+    plugins: [{ src: '~/plugins/vue-plyr.js', ssr: false }],
 
     primevue: {
         /* Configuration */
