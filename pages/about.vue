@@ -48,12 +48,13 @@
 	
 	  <PrimePanel header="Just some links" class="my-6">
 			<p><a href="https://www.google.com">Google</a> my lord and savior on this project</p>
-			
+			<br>
+			<p>Embedded Resource: This was a funny video I found when we were looking at sorting algorithms</p>
 			<client-only>
 				<vue-plyr>
 					<div> <!--class="plyr__video-embed"> -->
 						<iframe
-							src="https://www.youtube.com/watch?v=ktgxMtWMflU&t=1siv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+							src="https://www.youtube.com/watch?v=ktgxMtWMflU&t=1ssiv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
 							allowfullscreen allowtransparency allow="autoplay">
 						</iframe>
 					</div>
