@@ -11,7 +11,7 @@
 </script> -->
 <script>
 	import { createApp } from 'vue'
-	import App from './App.vue'
+	// import App from './App.vue'
 	import VuePlyr from 'vue-plyr'
 	import 'vue-plyr/dist/vue-plyr.css'
 
