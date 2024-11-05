@@ -4,7 +4,7 @@ export default defineNuxtConfig({
     plugins: [{ src: '~/plugins/vue-plyr.js', ssr: false }],
     build: {
       rollupOptions: {
-        external: ["vue-plyr"],
+        // external: ["vue-plyr"],
       },
     },
     vite: {
