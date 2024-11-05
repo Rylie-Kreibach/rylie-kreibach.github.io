@@ -54,7 +54,7 @@
 				<vue-plyr>
 					<div> <!--class="plyr__video-embed"> -->
 						<iframe
-							src="https://www.youtube.com/watch?v=ktgxMtWMflU&t=1s"
+							src="https://www.youtube.com/embed/ktgxMtWMflU?autoplay=1&rel=0"
 							allowfullscreen allowtransparency allow="autoplay">
 						</iframe>
 					</div>
